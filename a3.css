@@ -1,0 +1,330 @@
+html{
+    scroll-behavior: smooth;
+}
+.h {
+    transform: translateX(150px);
+}
+
+.m {
+    transform: translateX(-150px);
+}
+
+.topbar {
+    background: #f6e1e1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width:auto;
+    height: 150px;
+    transform: translateX(-55px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav ul li:hover {
+    color: #0066ff;
+    cursor: pointer;
+}
+
+.nav-top {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.enroll-btn{
+background:red;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+.popup-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(5px);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+
+.popup-box{
+background:white;
+padding:30px;
+width:350px;
+border-radius:10px;
+animation:popup 0.4s;
+position:relative;
+}
+
+@keyframes popup{
+from{
+transform:scale(0.7);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+.popup-box h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.popup-box input,
+.popup-box select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.popup-box button{
+width:100%;
+padding:12px;
+background:#007bff;
+color:white;
+border:none;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.close-btn{
+position:absolute;
+top:10px;
+right:15px;
+font-size:22px;
+cursor:pointer;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transform: translateY(-60px);
+}
+
+.context h1 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+.context p {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.text-img img {
+    width: 600px;
+}
+
+.courses {
+    padding: 60px;
+    text-align: center;
+    border-top: 4px solid #ccc;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+
+.courses h2 {
+    font-size: 40px;
+    color: #0066ff;
+    margin-bottom: 40px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.course img{
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    padding: 60px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+}
+
+.about-hedding {
+    color: #0066ff;
+}
+
+.about span {
+    color: #0066ff;
+}
+
+.about-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+
+.career{
+background:linear-gradient(to right,#1cb5e0,#0096c7);
+color:white;
+text-align:center;
+padding:110px 40px;
+}
+
+.career h1{
+font-size:48px;
+letter-spacing:3px;
+}
+
+.timeline{
+position:relative;
+margin-top:70px;
+}
+
+.timeline svg{
+width:100%;
+position:absolute;
+top:30px;
+left:0;
+}
+
+.career-accelerations{
+display:flex;
+justify-content:space-between;
+position:relative;
+flex-wrap:wrap;
+}
+
+.career-acceleration{
+text-align:center;
+width:25%;
+}
+
+.circle{
+width:70px;
+height:70px;
+border-radius:50%;
+border:3px solid white;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-size:28px;
+transition:0.3s;
+}
+
+.circle:hover{
+background:white;
+color:#0096c7;
+}
+
+.career-acceleration p{
+margin-top:15px;
+font-size:18px;
+}
+
+.footer{
+background:#f5f5f5;
+padding:40px 20px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.footer-box{
+width:23%;
+}
+
+.footer-box h3{
+margin-bottom:10px;
+}
+
+.footer-box ul{
+list-style:none;
+padding:0;
+}
+
+.footer-box ul li{
+margin:5px 0;
+}
+
+.footer-bottom{
+border-top:1px solid #ccc;
+margin-top:20px;
+padding-top:10px;
+display:flex;
+justify-content:space-between;
+font-weight:bold;
+}
+
+@media(max-width:768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-accelerations{
+flex-direction:column;
+align-items:center;
+gap:40px;
+}
+
+.career-acceleration{
+width:100%;
+}
+
+.timeline svg{
+display:none;
+}
+
+}
