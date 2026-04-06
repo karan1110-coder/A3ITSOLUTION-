@@ -1,1 +1,315 @@
-# A3ITSOLUTION-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> A3 IT SOLUTION</title>
+    <link rel="stylesheet" href="./a3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <span class="h">📞 +91 6367304224</span>
+        <span class="m">✉ a3itsolutions33@gmail.com</span>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo"><img src="./logo.png" alt=""></div>
+
+        <ul class="nav-top">
+            <li><a href="#home">Home </a> </li>
+            <li><a href="#courses">Courses </a> </li>
+            <li><a href="#about">About </a> </li>
+            <li><a href="">Testimonials </a> </li>
+            <li><a href="">FAQ </a> </li>
+            <li><a href="">Contact </a> </li>
+        </ul>
+
+        <button class="enroll-btn" onclick="openPopup()">Enroll Now</button>
+
+        <div class="popup-bg" id="popup">
+
+            <div class="popup-box">
+
+                <span class="close-btn" onclick="closePopup()">×</span>
+
+                <h2>Enroll Now</h2>
+
+                <form id="enrollForm">
+
+                    <input type="text" id="name" placeholder="Full Name">
+                    <span class="error" id="nameError"></span>
+
+                    <input type="email" id="email" placeholder="Email Address">
+                    <span class="error" id="emailError"></span>
+
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                    <span class="error" id="phoneError"></span>
+
+                    <select id="course">
+                        <option>Select Course</option>
+                        <option>Python + AI</option>
+                        <option>Full Stack Web Development</option>
+                        <option>Data Science & Analytics</option>
+                        <option>Cyber Security</option>
+                        <option>Cloud Computing</option>
+                        <option>DevOps Engineering</option>
+                        <option>Digital Marketing</option>
+                        <option>UI/UX Design</option>
+                        <option>Java Spring Boot</option>
+                        <option>Mobile App Development</option>
+                        <option>Blockchain Development</option>
+                    </select>
+                    <button type="submit">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="text">
+
+        <div class="context">
+            <h1 id="home">Transform <br> Your <br> Career.</h1>
+
+            <p>
+                Master industry-ready IT skills with 100% practical training.
+                Learn from experts, work on live projects, and get placed with confidence.
+            </p>
+        </div>
+
+        <div class="text-img">
+            <img src="./html.jpg.jpeg">
+        </div>
+
+    </section>
+
+    </section>
+
+    <!-- Premium Courses -->
+    <section class="courses">
+
+        <h2 id="courses">Premium Courses</h2>
+
+        <div class="course-grid">
+
+            <div class="course">
+                <img src="./python.png" alt="">
+                <h3>Python + AI</h3>
+                <p>Master Python and explore the world of Artificial Intelligence.This course prepares you for careers
+                    in data science, machine learning, and AI development, helping you build intelligent systems.</p>
+            </div>
+
+            <div class="course">
+                <img src="./full-stack-developer.png" alt="">
+                <h3>Full Stack Web Development</h3>
+                <p>Become a skilled Full Stack Developer with the MERN stack, Learn to build dynamic, responsive web
+                    applications from front-end to back-end for modern web development,</p>
+            </div>
+
+            <div class="course">
+                <img src="./data-science.png" alt="">
+                <h3>Data Science & Analytics</h3>
+                <p>Transform raw data into actionable insights. This course covers statistical analysis, data
+                    visualization, and machine learning techniques to solve complex business problems and</p>
+            </div>
+
+            <div class="course">
+                <img src="./cloud-computing.png" alt="">
+                <h3>Cloud Computing</h3>
+                <p>Gain expertise in Amazon Web Services (AWS), the leading cloud platform.Learn to deploy, manage, and
+                    scale applications in the cloud, preparing you for high-demand cloud architect and engineer roles.
+                </p>
+            </div>
+
+            <div class="course">
+                <img src="./artificial-intelligence.png" alt="">
+                <h3>Cyber Security</h3>
+                <p>Learn to protect digital assets and systems from cyber threats, This course covers ethical hacking,
+                    network security, and incident response, preparing you for a career in cybersecurity.</p>
+            </div>
+
+            <div class="course">
+                <img src="./devops.png" alt="">
+                <h3>DevOps Engineering</h3>
+                <p>Bridge the gap between development and operations. Learn to automate software delivery, implement
+                    CI/CD, and manage infrastructure as code.</p>
+            </div>
+
+            <div class="course">
+                <img src="./bullhorn.png" alt="">
+                <h3>Digital Marketing</h3>
+                <p>Master the art of online promotion and brand building, This course covers SEO, SEM, social media
+                    marketing, content marketing, and analytics to drive business growth in the digital age.</p>
+            </div>
+
+            <div class="course">
+                <img src="./ux.png" alt="">
+                <h3>UI/UX Design</h3>
+                <p>Design intuitive and engaging user experiences, Learn the principles of user interface and user
+                    experience design, from wire framing and prototyping to user research and usability testing.</p>
+            </div>
+
+            <div class="course">
+                <img src="./java.png" alt="">
+                <h3>Java Spring Boot</h3>
+                <p>Become a professional Java developer specializing in enterprise-grade applications using Spring Boot.
+                    This course covers core Java, advanced concepts, and the Spring framework for robust backend
+                    development.</p>
+            </div>
+
+            <div class="course">
+                <img src="./app-development.png" alt="">
+                <h3>Mobile App Development</h3>
+                <p>Create Android and iOS apps.</p>
+            </div>
+
+            <div class="course">
+                <img src="./icons8-blockchain-64.png" alt="">
+                <h3>Blockchain Development</h3>
+                <p>Dive into the decentralized world of blockchain technology. Learn to develop smart contracts, build
+                    D-Apps and understand the underlying principles of cryptocurrencies and distributed ledgers.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2 id="about">About <span>us</span></h2>
+
+        <p>
+            we don't just teach code; we engineer careers. Our mission is to transform fresh graduates into confident,
+            job-ready professionals through rigorous, hands-on training.
+        </p>
+
+        <div class="about-grid">
+
+            <div>
+                <h3 class="about-hedding">Practical Focus</h3>
+                <p>Theory is optional. Practice is mandatory.100% hands-on curriculum.</p>
+            </div>
+
+            <div>
+                <h3 class="about-hedding">Expert Mentors</h3>
+                <p>Learn directly from developers and architects currently working in the industry,</p>
+            </div>
+
+            <div>
+                <h3 class="about-hedding">Live Projects</h3>
+                <p>Build real applications that go into your portfolio, not just toy examples</p>
+            </div>
+
+            <div>
+                <h3 class="about-hedding">Career Support</h3>
+                <p>From resume crafting to mock interviews, we walk with you until you're hired</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="career">
+
+        <h1>CAREER ACCELERATION</h1>
+
+        <p>Our responsibility doesn't end with training. We support you until you land your dream job.</p>
+
+        <div class="timeline">
+
+            <svg viewBox="0 0 1200 200">
+                <path d="M0 120 Q150 40 300 120 T600 120 T900 120 T1200 120" stroke="white" stroke-width="3"
+                    fill="none" />
+            </svg>
+
+            <div class="career-accelerations">
+
+                <div class="career-acceleration">
+                    <div class="circle"><i class="fa-solid fa-palette"></i></div>
+                    <p>Resume Building</p>
+                </div>
+
+                <div class="career-acceleration">
+                    <div class="circle"><i class="fa-solid fa-user-group"></i></div>
+                    <p>Mock Interviews</p>
+                </div>
+
+                <div class="career-acceleration">
+                    <div class="circle"><i class="fa-solid fa-code"></i></div>
+                    <p>Live Projects</p>
+                </div>
+
+                <div class="career-acceleration">
+                    <div class="circle"><i class="fa-solid fa-briefcase"></i></div>
+                    <p>Job Assistance</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h3>A3 IT Solutions</h3>
+<p><b>Launch Your IT Career</b></p>
+<p>
+Premium IT training institute in Jaipur offering industry-focused
+courses with 100% practical training and placement assistance.
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li>Home</li>
+<li>All Courses</li>
+<li>About Us</li>
+<li>Student Success Stories</li>
+<li>FAQ</li>
+<li>Contact Us</li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Popular Courses</h3>
+<ul>
+<li>Python + AI</li>
+<li>Data Science</li>
+<li>Full Stack Development</li>
+<li>Salesforce</li>
+<li>Cloud Computing</li>
+<li>Digital Marketing</li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Contact Info.</h3>
+<p>Jhotwara, Jaipur, Rajasthan</p>
+<p>+91 6367304224</p>
+<p>a3itsolutions3@gmail.com</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 A3 IT Solutions. All rights reserved.</p>
+<p>Privacy Policy | Terms of Service</p>
+</div>
+
+</footer>
+
+
+
+    <script src="./a3.js"></script>
+</body>
+
+</html>
